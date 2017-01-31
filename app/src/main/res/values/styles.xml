@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="colorPrimary">@color/redStyle</item>
+        <item name="colorPrimaryDark">@color/redStyle</item>
+        <item name="colorAccent">@color/redStyle</item>
+        <item name="colorButtonNormal">@color/redStyle</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="rugbyButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/buttonTopMargin</item>
+        <item name="android:background">@drawable/roundbutton</item>
+    </style>
+
+    <style name="rugbyTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="rugbyRedTextStyle">parent ="rugbyTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/redStyle</item>
+    </style>
+
+    <style name="rugbyScoreLayoutStyle">
+        <item name="android:layout_width">@dimen/scoreWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/scoreMargin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="matchParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+</resources>
+
+

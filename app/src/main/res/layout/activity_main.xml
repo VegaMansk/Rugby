@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/matchParentStyle"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        style="@style/matchParentStyle"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.rugby.MainActivity">
+
+        <TextView
+            style="@style/rugbyTextStyle"
+            android:background="@drawable/roundbutton"
+            android:text="@string/title"
+            android:textSize="@dimen/titleTextSize" />
+
+        <LinearLayout
+            style="@style/matchParentStyle"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/generalPadding">
+
+            <LinearLayout style="@style/rugbyScoreLayoutStyle">
+
+                <TextView
+                    style="@style/rugbyRedTextStyle"
+                    android:text="@string/textLeftScore" />
+
+                <TextView
+                    android:id="@+id/scoreHome"
+                    style="@style/rugbyRedTextStyle"
+                    android:text="@string/defaultScore"
+                    android:textSize="@dimen/scoreTextSize" />
+
+                <Button
+                    style="@style/rugbyButtonStyle"
+                    android:onClick="addThreeHome"
+                    android:text="@string/textTopButton" />
+
+                <Button
+                    style="@style/rugbyButtonStyle"
+                    android:onClick="addFiveHome"
+                    android:text="@string/textMiddleButton" />
+
+                <Button
+                    style="@style/rugbyButtonStyle"
+                    android:onClick="addTwoHome"
+                    android:text="@string/textBottomButton" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/rugbyScoreLayoutStyle">
+
+                <TextView
+                    style="@style/rugbyRedTextStyle"
+                    android:text="@string/textRightScore" />
+
+                <TextView
+                    android:id="@+id/scoreGuests"
+                    style="@style/rugbyRedTextStyle"
+                    android:text="@string/defaultScore"
+                    android:textSize="@dimen/scoreTextSize" />
+
+                <Button
+                    style="@style/rugbyButtonStyle"
+                    android:onClick="addThreeGuests"
+                    android:text="@string/textTopButton" />
+
+                <Button
+                    style="@style/rugbyButtonStyle"
+                    android:onClick="addFiveGuests"
+                    android:text="@string/textMiddleButton" />
+
+                <Button
+                    style="@style/rugbyButtonStyle"
+                    android:onClick="addTwoGuests"
+                    android:text="@string/textBottomButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundbutton"
+            android:onClick="Reset"
+            android:text="@string/textResetButton" />
+    </LinearLayout>
+</ScrollView>

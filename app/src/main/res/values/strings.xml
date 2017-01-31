@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RUGBY SCORE</string>
+    <string name="defaultScore">0</string>
+    <string name="textLeftScore">HOME</string>
+    <string name="textRightScore">GUESTS</string>
+    <string name="textTopButton">KICK</string>
+    <string name="textMiddleButton">TRY</string>
+    <string name="textBottomButton">CONVERSION \nKICK</string>
+    <string name="textResetButton">RESET</string>
+    <string name="title">RUGBY SCORE</string>
+</resources>
